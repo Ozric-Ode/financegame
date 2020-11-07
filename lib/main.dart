@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'infopage.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
 
       //change the name of home according to your file class name
       // Example: if your class name is LandingPage, then write
-      //home: LandingPage(),
+      home: InfoPage(),
 
       // home: HomeScreen(),
     );

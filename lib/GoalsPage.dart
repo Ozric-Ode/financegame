@@ -17,8 +17,14 @@ class GoalsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     int totalNumberOfQues = 10, numberOfQues = 2;
     return Scaffold(
-      body: Container(
+      backgroundColor: Color(0XFF191D38),
+      body: SingleChildScrollView(
+
+         scrollDirection: Axis.vertical,
+      child: Container(
         // padding: EdgeInsets.all(20),
+     //   color: Color(0XFF292C45),
+       // color: Colors.blue,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,7 +35,10 @@ class GoalsPage extends StatelessWidget {
                   const EdgeInsets.symmetric(horizontal: 180, vertical: 10.0),
               child: Text(
                 "Level 2",
-                style: GoogleFonts.montserrat(fontSize: 24),
+                style: GoogleFonts.montserrat(
+                  fontSize: 24,
+                  
+                ),
               ),
             ),
             Row(
@@ -52,13 +61,25 @@ class GoalsPage extends StatelessWidget {
                   width: 140,
                 ),
                 Container(
+                  decoration:BoxDecoration(
+                    color: Color(0xffC4C4C4),
+                    borderRadius: BorderRadius.circular(32),
+
+                  ) ,
+                  
                   height: 30,
                   width: 222,
-                  color: Color(0xffC4C4C4),
+                  
+                 // color: Color(0xffC4C4C4),
                   child: Center(
+
                     child: Text(
+
                       name,
-                      style: GoogleFonts.montserrat(fontSize: 21),
+                      
+                      style: GoogleFonts.montserrat(
+                        fontSize: 21,
+                      ),
                       textAlign: TextAlign.center,
                       softWrap: true,
                     ),
@@ -84,7 +105,7 @@ class GoalsPage extends StatelessWidget {
                   height: 530,
                   width: 1080,
                   decoration: BoxDecoration(
-                    color: Color(0xffC4C4C4),
+                    color: Color(0XFF292C45),
                     borderRadius: BorderRadius.circular(32),
                   ),
                   child: Padding(
@@ -93,40 +114,52 @@ class GoalsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
+                            
                           height: 230,
                           width: MediaQuery.of(context).size.width,
                           child: Text(
-                            "Question",
-                            style: GoogleFonts.montserrat(fontSize: 65),
+                            "Question\nWe are from hera pheri company, and we are pleased to inform you about a scheme that is best suited for a guy with a stable job like you. The scheme’s name is “25 din mein paisa double scheme”. If you invest 25000 in our scheme after 25 days we will be returning 50,000. This will really help in providing surplus money in the beginning of your career.\n\nWould you like to accept this yes or no?",
+                            style: GoogleFonts.montserrat(fontSize: 20,color: Colors.white,),
                           ),
                         ),
                         Container(
-                          height: 70,
+                         // color: Color(0XFF0AB286),
+                         // color: Colors.blue,
+
+                          height: 50,
                           width: MediaQuery.of(context).size.width,
                           child: RaisedButton(
+
+                            color: Color(0XFF0AB286),
+                            shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
                             child: Text(
                               "A. Check this",
-                              style: GoogleFonts.montserrat(fontSize: 30),
+                              style: GoogleFonts.montserrat(fontSize: 30,color: Colors.white,),
                               softWrap: true,
                             ),
                             onPressed: () {},
-                            color: Color(0xff838383),
+                           // color: Color(0xff838383),
                           ),
                         ),
                         SizedBox(
                           height: 15,
                         ),
                         Container(
-                          height: 70,
+                          height: 50,
                           width: MediaQuery.of(context).size.width,
                           child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
                             child: Text(
                               "B. Check this",
-                              style: GoogleFonts.montserrat(fontSize: 30),
+                              style: GoogleFonts.montserrat(fontSize: 30,color: Colors.white,),
                               softWrap: true,
                             ),
                             onPressed: () {},
-                            color: Color(0xff838383),
+                            color: Color(0XFF0AB286),
                           ),
                         ),
                         SizedBox(
@@ -136,11 +169,11 @@ class GoalsPage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.emoji_objects),
+                              Icon(Icons.emoji_objects,color: Colors.amber,),
                               Text(
                                 'Tip: ABCDEFGHIJKLMONOPQRSTUVWXYZ',
                                 style: GoogleFonts.montserrat(
-                                  fontSize: 20,
+                                  fontSize: 20,color: Colors.amber,
                                 ),
                               ),
                             ],
@@ -172,14 +205,14 @@ class GoalsPage extends StatelessWidget {
                   return RaisedButton(
                       shape:RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20)),),
                       onPressed: (){},
-                      color: Color(0xffC4C4C4),
+                       color: Color(0XFF0AB286),
                       padding: EdgeInsets.all(10.0),
                       child: Center(
                         child: Text(
                           financialWays[index],
                           style: GoogleFonts.openSans(
                             textStyle: Theme.of(context).textTheme.headline4,
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 32,
                             fontWeight: FontWeight.w500,
                           ),
@@ -193,6 +226,7 @@ class GoalsPage extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 }

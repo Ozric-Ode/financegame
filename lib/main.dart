@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'BankAccountPage.dart';
 import 'LoanFormalPage.dart';
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Finance Game",
 
+
       home: WrongChoice(),
+
     );
   }
 }

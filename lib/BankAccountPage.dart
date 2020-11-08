@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BankAccount extends StatelessWidget {
+  static const routeName = '/accountPage';
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width / 1440;

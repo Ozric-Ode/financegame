@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import 'loanCalculation.dart';
 
 class InformalLoan extends StatefulWidget {
+  static const routeName = '/infPage';
   @override
   _InformalLoanState createState() => _InformalLoanState();
 }
@@ -78,7 +79,6 @@ class _InformalLoanState extends State<InformalLoan> {
                           labelText: 'Enter Duration',
                         ),
                         onSubmitted: (value) {
-                          
                           print(amountPayble);
                           update();
                           print(amountPayble);

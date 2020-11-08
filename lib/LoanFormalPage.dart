@@ -8,6 +8,7 @@ class LoanFormal extends StatelessWidget {
     var h = MediaQuery.of(context).size.height / 1024;
 
     return Scaffold(
+      backgroundColor:  Color(0XFF191D38),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,30 +41,33 @@ class LoanFormal extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                 SizedBox(height: 32 * w),
                 Text(
                   'LOANS : ',
                   style: GoogleFonts.montserrat(
-                    fontSize:36,
+                    fontSize:36*w,
                     fontWeight: FontWeight.w700,
+                     color: Color(0xFFF2F2F2),
                   ),
                 ),
                 Text(
                   ' ufhaidukvba doukhv basikhbvz',
                   style: GoogleFonts.montserrat(
-                    fontSize: 24,
+                    fontSize: 24*w,
                     fontWeight: FontWeight.w500,
+                     color: Color(0xFFF2F2F2),
                     
                   ),
                 ),
               ],
             ),
-              SizedBox(height: 72 * w),
+              SizedBox(height: 32 * w),
             Center(
               child: Container(
-                width: 1080 * w,
-                height: 556 * h,
+                width: 900 * w,
+                height: 656 * h,
                 decoration: BoxDecoration(
-                    color: Colors.amber,
+                    color: Color(0XFF292E49),
                     borderRadius: BorderRadius.all(Radius.circular(48))),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -72,10 +76,10 @@ class LoanFormal extends StatelessWidget {
                     FlatButton(
                       onPressed: () {},
                       child: Container(
-                          width: 350 * w,
-                          height: 406 * h,
+                          width: 320 * w,
+                          height: 416 * h,
                           decoration: BoxDecoration(
-                              color: Colors.red[400],
+                              color: Color(0xFF0AB286),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(18))),
                           child: Column(
@@ -91,8 +95,8 @@ class LoanFormal extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                height: 6 * h,
-                                color: Colors.red[200],
+                                height: 3 * h,
+                                 color: Color(0xFFF2F2F2),
                               ),
                               Flexible(
                                 child: Padding(
@@ -116,10 +120,10 @@ class LoanFormal extends StatelessWidget {
                     FlatButton(
                       onPressed: () {},
                       child: Container(
-                          width: 350 * w,
-                          height: 406 * h,
+                        width: 320 * w,
+                          height: 416 * h,
                           decoration: BoxDecoration(
-                              color: Colors.red[400],
+                            color: Color(0xFF0AB286),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(18))),
                           child: Column(
@@ -135,8 +139,8 @@ class LoanFormal extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                height: 6 * h,
-                                color: Colors.red[200],
+                                height: 3 * h,
+                            color: Color(0xFFF2F2F2),
                               ),
                               Flexible(
                                 child: Padding(
@@ -170,8 +174,9 @@ class LoanFormal extends StatelessWidget {
                 Text(
                   'Tip :  ufhaidukvba doukhv basikhbvz',
                   style: GoogleFonts.montserrat(
-                    fontSize: 24,
+                    fontSize: 24*w,
                     fontWeight: FontWeight.w500,
+                    color: Colors.amber,
                   ),
                 ),
               ],

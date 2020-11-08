@@ -1,3 +1,4 @@
+import 'package:financegame/formalloans.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       // Example: if your class name is LandingPage, then write
       //home: LandingPage(),
 
-      // home: HomeScreen(),
+       home: FormalLoan(),
     );
   }
 }

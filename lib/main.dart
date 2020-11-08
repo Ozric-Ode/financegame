@@ -1,4 +1,4 @@
-import 'package:financegame/formalloans.dart';
+
 import 'package:flutter/material.dart';
 import 'BankAccountPage.dart';
 import 'LoanFormalPage.dart';

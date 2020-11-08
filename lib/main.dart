@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './LandingPage.dart';
+
+import 'infopage.dart';
 
 import './GoalsPage.dart';
 void main() {

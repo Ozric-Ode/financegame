@@ -26,6 +26,12 @@ class _ShareMarketState extends State<ShareMarket> {
   bool isProfit, isEqual, isBought;
   var rng = new Random();
 
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
+  }
+
   void changeValue() {
     setState(() {
       previousValue = currentValue;

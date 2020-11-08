@@ -6,6 +6,7 @@ import './BankAccountPage.dart';
 import 'ShareMarket.dart';
 import './insurance.dart';
 import './taxes.dart';
+import 'formalloans.dart';
 
 class InfoPage extends StatelessWidget {
   static const routeName = '/infoPage';

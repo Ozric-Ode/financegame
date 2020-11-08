@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         WrongChoice.routeName: (context) => WrongChoice(),
         TaxPage.routeName: (context) => TaxPage(),
         InsurancePage.routeName: (context) => InsurancePage(),
+        LoanFormal.routeName: (context) => LoanFormal(),
       },
       debugShowCheckedModeBanner: false,
       title: "Finance Game",

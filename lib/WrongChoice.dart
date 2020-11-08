@@ -26,7 +26,7 @@ class WrongChoice extends StatelessWidget {
            child:Center(
              
              child: Text(
-             'Well Played. Better Luck next Time!!',
+             'You could have made a better choice!!',
               style: GoogleFonts.openSans(
                     textStyle: Theme.of(context).textTheme.headline4,
                     color: Color(0xFFFffffff),

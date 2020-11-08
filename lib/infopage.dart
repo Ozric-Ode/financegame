@@ -49,7 +49,7 @@ class InfoPage extends StatelessWidget {
                     children: <Widget>[
                       Flexible(
                         child: Text(
-                          "Welcome ${nameEntered} to financegame here you will be taught how to manage your personal finance and investments. ",
+                          "Welcome $nameEntered to financegame here you will be taught how to manage your personal finance and investments. ",
                           style: GoogleFonts.openSans(
                             textStyle: Theme.of(context).textTheme.headline4,
                             color: Color(0xFFF2F2F2),
@@ -74,7 +74,7 @@ class InfoPage extends StatelessWidget {
                       ),
                       Flexible(
                         child: Text(
-                          "Hey ${nameEntered}, you have just passed out with a degree of computer science and engineering, and you have a job of Rs. 30000",
+                          "Hey $nameEntered, you have just passed out with a degree of computer science and engineering, and you have a job of Rs. 30000",
                           style: GoogleFonts.openSans(
                             textStyle: Theme.of(context).textTheme.headline4,
                             color: Color(0xFFF2F2F2),

@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'BankAccountPage.dart';
 import 'LoanFormalPage.dart';
+import './GoalsPage.dart';
+import './ShareMarket.dart';
 import './RightChoice.dart';
 import './WrongChoice.dart';
 import './LandingPage.dart';

@@ -15,6 +15,7 @@ class InfoPage extends StatelessWidget {
       "Insurance"
     ];
     return Scaffold(
+      backgroundColor: Color(0XFF191D38),
       body: Container(
         margin: EdgeInsets.all(40.0),
         child: Container(
@@ -26,7 +27,7 @@ class InfoPage extends StatelessWidget {
               Text(
                 "Welcome ",
                 style: GoogleFonts.montserrat(
-                  color: Color(0xff602080),
+                  color: Color(0XFFffffff),
                   fontSize: 28,
                 ),
               ),
@@ -38,7 +39,7 @@ class InfoPage extends StatelessWidget {
                 width: cwidth * (1140 / 1440),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: Colors.black38,
+                  color: Color(0xff292E49),
                 ),
                 child: Container(
                   padding: EdgeInsets.all(10.0),
@@ -109,14 +110,14 @@ class InfoPage extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                       ),
                       onPressed: () {},
-                      color: Color(0xffC4C4C4),
+                      color: Color(0xff0AB286),
                       padding: EdgeInsets.all(10.0),
                       child: Center(
                         child: Text(
                           financialWays[index],
                           style: GoogleFonts.openSans(
                             textStyle: Theme.of(context).textTheme.headline4,
-                            color: Colors.black,
+                            color: Color(0xffF2F2F2),
                             fontSize: 32,
                             fontWeight: FontWeight.w500,
                           ),

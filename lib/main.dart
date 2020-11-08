@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       // Example: if your class name is LandingPage, then write
 
 
-      home: MyCustomForm(),
-
+      // home: MyCustomForm(),
+  home: InfoPage(),
 
       // home: HomeScreen(),
     );

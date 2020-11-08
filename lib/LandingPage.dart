@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyCustomForm extends StatefulWidget {
   @override
@@ -16,9 +17,10 @@ class LandingPage extends State<MyCustomForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white60,
+      backgroundColor: Color(0XFF191D38),
       body: Column(
         children: <Widget>[
+          SizedBox(height:20,),
           // color :Colors.black38,
           Center(
             child: Card(
@@ -26,13 +28,20 @@ class LandingPage extends State<MyCustomForm> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
-              color: Colors.black12,
+              color: Color(0XFFBD5EC3),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 200.0, vertical: 30),
                 child: Text(
-                  'FINANCE GAME',
-                  style: Theme.of(context).textTheme.headline4,
+                          "Finance Game",
+                          style: GoogleFonts.openSans(
+                            textStyle: Theme.of(context).textTheme.headline4,
+                            color: Color(0xFFFffffff),
+                            fontSize: 32,
+                            fontWeight: FontWeight.w300,
+                            //letterSpacing: -5,
+                          ),
+                    
                 ),
                 //////////////////
               ),
@@ -48,7 +57,7 @@ class LandingPage extends State<MyCustomForm> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
-              color: Colors.black38,
+              color: Color(0XFF292E49),
               child: Padding(
                 padding: const EdgeInsets.all(40.0),
                 child: Column(
@@ -56,7 +65,7 @@ class LandingPage extends State<MyCustomForm> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Card(
-                      color: Colors.black45,
+                      color: Color(0XFFA59F9F),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50),
                       ),
@@ -71,6 +80,7 @@ class LandingPage extends State<MyCustomForm> {
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(),
                                   labelText: 'Enter your Name',
+                                  
                                 ),
                               ),
                             ],
@@ -87,7 +97,7 @@ class LandingPage extends State<MyCustomForm> {
                         ),
                         padding: const EdgeInsets.symmetric(
                             horizontal: 125.0, vertical: 30),
-                        color: Colors.black12,
+                        color: Color(0XFF0AB286),
                         onPressed: () {
                           return showDialog(
                             context: context,

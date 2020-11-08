@@ -13,32 +13,55 @@ class LoanFormal extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(
-                child: Container(
-              width: 1080 * w,
-               decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.all(Radius.circular(48))),
-              child: Flexible(
-                child: Padding(
-                  padding: const EdgeInsets.all(14.0),
-                  child: Text(
-                    "Current bank account is opened by businessmen who have a higher number of regular transactions with the bank. It includes deposits, withdrawals, and contra transactions. It is also known as Demand Deposit Account.In current account, amount can be deposited and withdrawn at any time without giving any notice.",
-                    style: GoogleFonts.montserrat(
-                      textStyle: Theme.of(context).textTheme.headline4,
-                      color: Color(0xFFF2F2F2),
-                      fontSize: 15 * w,
-                      fontWeight: FontWeight.w300,
-                      //letterSpacing: -5,
-                    ),
+            // Center(
+            //     child: Container(
+            //   width: 1080 * w,
+            //    decoration: BoxDecoration(
+            //         color: Colors.amber,
+            //         borderRadius: BorderRadius.all(Radius.circular(48))),
+            //   child: Flexible(
+            //     child: Padding(
+            //       padding: const EdgeInsets.all(14.0),
+            //       child: Text(
+            //         "Current bank account is opened by businessmen who have a higher number of regular transactions with the bank. It includes deposits, withdrawals, and contra transactions. It is also known as Demand Deposit Account.In current account, amount can be deposited and withdrawn at any time without giving any notice.",
+            //         style: GoogleFonts.montserrat(
+            //           textStyle: Theme.of(context).textTheme.headline4,
+            //           color: Color(0xFFF2F2F2),
+            //           fontSize: 15 * w,
+            //           fontWeight: FontWeight.w300,
+            //           //letterSpacing: -5,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),),
+           
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  'LOANS : ',
+                  style: GoogleFonts.montserrat(
+                    fontSize:36,
+                    fontWeight: FontWeight.w700,
                   ),
                 ),
-              ),
-            ),),
+                Text(
+                  ' ufhaidukvba doukhv basikhbvz',
+                  style: GoogleFonts.montserrat(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    
+                  ),
+                ),
+              ],
+            ),
+              SizedBox(height: 72 * w),
             Center(
               child: Container(
                 width: 1080 * w,
-                height: 456 * h,
+                height: 556 * h,
                 decoration: BoxDecoration(
                     color: Colors.amber,
                     borderRadius: BorderRadius.all(Radius.circular(48))),
@@ -60,7 +83,7 @@ class LoanFormal extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(21),
                                 child: Text(
-                                  'Current Account',
+                                  'Formal Loan',
                                   style: GoogleFonts.montserrat(
                                       fontSize: 24 * w,
                                       fontWeight: FontWeight.w500,
@@ -104,7 +127,7 @@ class LoanFormal extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(21),
                                 child: Text(
-                                  'Savings Account',
+                                  'Formal Loan',
                                   style: GoogleFonts.montserrat(
                                       fontSize: 24 * w,
                                       fontWeight: FontWeight.w500,

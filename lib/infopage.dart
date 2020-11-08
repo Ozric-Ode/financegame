@@ -1,7 +1,14 @@
+import 'package:financegame/LoanFormalPage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import './BankAccountPage.dart';
+import 'ShareMarket.dart';
+import './insurance.dart';
+import './taxes.dart';
+
 class InfoPage extends StatelessWidget {
+  static const routeName = '/infoPage';
   @override
   Widget build(BuildContext context) {
     double cwidth = MediaQuery.of(context).size.width;
@@ -13,6 +20,13 @@ class InfoPage extends StatelessWidget {
       "Loans",
       "Taxing",
       "Insurance"
+    ];
+    final List<String> routesAddress = [
+      BankAccount.routeName,
+      ShareMarket.routeName,
+      LoanFormal.routeName,
+      TaxPage.routeName,
+      InsurancePage.routeName,
     ];
     return Scaffold(
       backgroundColor: Color(0XFF191D38),
@@ -109,7 +123,9 @@ class InfoPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed(routesAddress[index]);
+                      },
                       color: Color(0xff0AB286),
                       padding: EdgeInsets.all(10.0),
                       child: Center(

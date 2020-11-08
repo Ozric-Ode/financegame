@@ -5,6 +5,7 @@ import 'dart:math';
 import 'dart:developer' as dev;
 
 class ShareMarket extends StatefulWidget {
+  static const routeName = '\shareMarket';
   @override
   _ShareMarketState createState() => _ShareMarketState();
 }
@@ -67,7 +68,7 @@ class _ShareMarketState extends State<ShareMarket> {
         children: [
           Center(
             child: FlatButton(
-              onPressed: (){},
+              onPressed: () {},
               color: Color(0xff292C45),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(
@@ -81,7 +82,9 @@ class _ShareMarketState extends State<ShareMarket> {
               ),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Container(
             width: 928,
             alignment: Alignment.center,
@@ -106,7 +109,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   padding: const EdgeInsets.all(12.0),
                                   child: Text(
                                     "Agro Pro",
-                                    style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                    style: GoogleFonts.roboto(
+                                        fontSize: 20, color: Colors.white),
                                   ),
                                 ),
                                 Padding(
@@ -114,13 +118,13 @@ class _ShareMarketState extends State<ShareMarket> {
                                   child: Text.rich(
                                     TextSpan(
                                       text: 'Total Profit: ',
-                                      style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 20, color: Colors.white),
                                       children: <InlineSpan>[
                                         TextSpan(
                                           text: profit.toStringAsFixed(2),
-                                          style: GoogleFonts.roboto(
-                                              
-                                              fontSize: 20),
+                                          style:
+                                              GoogleFonts.roboto(fontSize: 20),
                                         ),
                                       ],
                                     ),
@@ -167,7 +171,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   Container(
                                     child: Text(
                                       currentValue.toStringAsFixed(2),
-                                      style: GoogleFonts.roboto(fontSize: 80,color: Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 80, color: Colors.white),
                                     ),
                                   ),
                                 ],
@@ -182,9 +187,16 @@ class _ShareMarketState extends State<ShareMarket> {
                                 (yourShares > 0)
                                     ? Expanded(
                                         child: Container(
-                                            alignment: Alignment.centerRight,
-                                            child:
-                                                Text("$yourShares share(s)",style:GoogleFonts.roboto(fontSize: 12,color: Colors.white,),),),)
+                                          alignment: Alignment.centerRight,
+                                          child: Text(
+                                            "$yourShares share(s)",
+                                            style: GoogleFonts.roboto(
+                                              fontSize: 12,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      )
                                     : Text(""),
                               ],
                             ),
@@ -211,8 +223,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         height: 90,
                                         child: Text(
                                           "BUY",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -240,8 +253,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         alignment: Alignment.center,
                                         child: Text(
                                           "SELL",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -286,7 +300,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   padding: const EdgeInsets.all(12.0),
                                   child: Text(
                                     "Agro Pro",
-                                    style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                    style: GoogleFonts.roboto(
+                                        fontSize: 20, color: Colors.white),
                                   ),
                                 ),
                                 Padding(
@@ -294,13 +309,13 @@ class _ShareMarketState extends State<ShareMarket> {
                                   child: Text.rich(
                                     TextSpan(
                                       text: 'Total Profit: ',
-                                      style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 20, color: Colors.white),
                                       children: <InlineSpan>[
                                         TextSpan(
                                           text: profit.toStringAsFixed(2),
-                                          style: GoogleFonts.roboto(
-                                              
-                                              fontSize: 20),
+                                          style:
+                                              GoogleFonts.roboto(fontSize: 20),
                                         ),
                                       ],
                                     ),
@@ -347,7 +362,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   Container(
                                     child: Text(
                                       currentValue.toStringAsFixed(2),
-                                      style: GoogleFonts.roboto(fontSize: 80,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 80, color: Colors.white),
                                     ),
                                   ),
                                 ],
@@ -363,8 +379,10 @@ class _ShareMarketState extends State<ShareMarket> {
                                     ? Expanded(
                                         child: Container(
                                             alignment: Alignment.centerRight,
-                                            child:
-                                                Text("$yourShares share(s)",style:GoogleFonts.roboto(fontSize: 12,color: Colors.white))))
+                                            child: Text("$yourShares share(s)",
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 12,
+                                                    color: Colors.white))))
                                     : Text(""),
                               ],
                             ),
@@ -391,8 +409,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         height: 90,
                                         child: Text(
                                           "BUY",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -420,8 +439,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         alignment: Alignment.center,
                                         child: Text(
                                           "SELL",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -470,7 +490,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   padding: const EdgeInsets.all(12.0),
                                   child: Text(
                                     "Agro Pro",
-                                    style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                    style: GoogleFonts.roboto(
+                                        fontSize: 20, color: Colors.white),
                                   ),
                                 ),
                                 Padding(
@@ -478,13 +499,13 @@ class _ShareMarketState extends State<ShareMarket> {
                                   child: Text.rich(
                                     TextSpan(
                                       text: 'Total Profit: ',
-                                      style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 20, color: Colors.white),
                                       children: <InlineSpan>[
                                         TextSpan(
                                           text: profit.toStringAsFixed(2),
-                                          style: GoogleFonts.roboto(
-                                              
-                                              fontSize: 20),
+                                          style:
+                                              GoogleFonts.roboto(fontSize: 20),
                                         ),
                                       ],
                                     ),
@@ -531,7 +552,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   Container(
                                     child: Text(
                                       currentValue.toStringAsFixed(2),
-                                      style:GoogleFonts.roboto(fontSize: 80,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 80, color: Colors.white),
                                     ),
                                   ),
                                 ],
@@ -547,8 +569,10 @@ class _ShareMarketState extends State<ShareMarket> {
                                     ? Expanded(
                                         child: Container(
                                             alignment: Alignment.centerRight,
-                                            child:
-                                                Text("$yourShares share(s)",style:GoogleFonts.roboto(fontSize: 12,color: Colors.white))))
+                                            child: Text("$yourShares share(s)",
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 12,
+                                                    color: Colors.white))))
                                     : Text(""),
                               ],
                             ),
@@ -575,8 +599,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         height: 90,
                                         child: Text(
                                           "BUY",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -604,8 +629,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         alignment: Alignment.center,
                                         child: Text(
                                           "SELL",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -650,7 +676,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   padding: const EdgeInsets.all(12.0),
                                   child: Text(
                                     "Agro Pro",
-                                    style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                    style: GoogleFonts.roboto(
+                                        fontSize: 20, color: Colors.white),
                                   ),
                                 ),
                                 Padding(
@@ -658,13 +685,13 @@ class _ShareMarketState extends State<ShareMarket> {
                                   child: Text.rich(
                                     TextSpan(
                                       text: 'Total Profit: ',
-                                      style: GoogleFonts.roboto(fontSize: 20,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 20, color: Colors.white),
                                       children: <InlineSpan>[
                                         TextSpan(
                                           text: profit.toStringAsFixed(2),
-                                          style: GoogleFonts.roboto(
-                                              
-                                              fontSize: 20),
+                                          style:
+                                              GoogleFonts.roboto(fontSize: 20),
                                         ),
                                       ],
                                     ),
@@ -711,7 +738,8 @@ class _ShareMarketState extends State<ShareMarket> {
                                   Container(
                                     child: Text(
                                       currentValue.toStringAsFixed(2),
-                                      style:GoogleFonts.roboto(fontSize: 80,color:Colors.white),
+                                      style: GoogleFonts.roboto(
+                                          fontSize: 80, color: Colors.white),
                                     ),
                                   ),
                                 ],
@@ -727,8 +755,10 @@ class _ShareMarketState extends State<ShareMarket> {
                                     ? Expanded(
                                         child: Container(
                                             alignment: Alignment.centerRight,
-                                            child:
-                                                Text("$yourShares share(s)",style:GoogleFonts.roboto(fontSize: 12,color: Colors.white))))
+                                            child: Text("$yourShares share(s)",
+                                                style: GoogleFonts.roboto(
+                                                    fontSize: 12,
+                                                    color: Colors.white))))
                                     : Text(""),
                               ],
                             ),
@@ -755,8 +785,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         height: 90,
                                         child: Text(
                                           "BUY",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {
@@ -784,8 +815,9 @@ class _ShareMarketState extends State<ShareMarket> {
                                         alignment: Alignment.center,
                                         child: Text(
                                           "SELL",
-                                          style:
-                                              GoogleFonts.roboto(fontSize: 30,color:Colors.white),
+                                          style: GoogleFonts.roboto(
+                                              fontSize: 30,
+                                              color: Colors.white),
                                         ),
                                       ),
                                       onPressed: () {

@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoanFormal extends StatelessWidget {
+  static const routeName = '\loanFormal';
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width / 1440;
     var h = MediaQuery.of(context).size.height / 1024;
 
     return Scaffold(
-      backgroundColor:  Color(0XFF191D38),
+      backgroundColor: Color(0XFF191D38),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,32 +37,31 @@ class LoanFormal extends StatelessWidget {
             //     ),
             //   ),
             // ),),
-           
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                 SizedBox(height: 32 * w),
+                SizedBox(height: 32 * w),
                 Text(
                   'LOANS : ',
                   style: GoogleFonts.montserrat(
-                    fontSize:36*w,
+                    fontSize: 36 * w,
                     fontWeight: FontWeight.w700,
-                     color: Color(0xFFF2F2F2),
+                    color: Color(0xFFF2F2F2),
                   ),
                 ),
                 Text(
                   ' ufhaidukvba doukhv basikhbvz',
                   style: GoogleFonts.montserrat(
-                    fontSize: 24*w,
+                    fontSize: 24 * w,
                     fontWeight: FontWeight.w500,
-                     color: Color(0xFFF2F2F2),
-                    
+                    color: Color(0xFFF2F2F2),
                   ),
                 ),
               ],
             ),
-              SizedBox(height: 32 * w),
+            SizedBox(height: 32 * w),
             Center(
               child: Container(
                 width: 900 * w,
@@ -96,7 +96,7 @@ class LoanFormal extends StatelessWidget {
                               ),
                               Container(
                                 height: 3 * h,
-                                 color: Color(0xFFF2F2F2),
+                                color: Color(0xFFF2F2F2),
                               ),
                               Flexible(
                                 child: Padding(
@@ -120,10 +120,10 @@ class LoanFormal extends StatelessWidget {
                     FlatButton(
                       onPressed: () {},
                       child: Container(
-                        width: 320 * w,
+                          width: 320 * w,
                           height: 416 * h,
                           decoration: BoxDecoration(
-                            color: Color(0xFF0AB286),
+                              color: Color(0xFF0AB286),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(18))),
                           child: Column(
@@ -140,7 +140,7 @@ class LoanFormal extends StatelessWidget {
                               ),
                               Container(
                                 height: 3 * h,
-                            color: Color(0xFFF2F2F2),
+                                color: Color(0xFFF2F2F2),
                               ),
                               Flexible(
                                 child: Padding(
@@ -174,7 +174,7 @@ class LoanFormal extends StatelessWidget {
                 Text(
                   'Tip :  ufhaidukvba doukhv basikhbvz',
                   style: GoogleFonts.montserrat(
-                    fontSize: 24*w,
+                    fontSize: 24 * w,
                     fontWeight: FontWeight.w500,
                     color: Colors.amber,
                   ),

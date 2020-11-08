@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FormalLoan extends StatefulWidget {
+  static const routeName = '/foPage';
   @override
   _FormalLoanState createState() => _FormalLoanState();
 }

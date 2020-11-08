@@ -12,6 +12,7 @@ class GoalsPage extends StatelessWidget {
     "Insurance"
   ];
   final String name = "Monik";
+  static const routeName = '/goalsPage';
   @override
   Widget build(BuildContext context) {
     int totalNumberOfQues = 10, numberOfQues = 2;

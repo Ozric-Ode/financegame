@@ -7,6 +7,7 @@ import 'ShareMarket.dart';
 import './insurance.dart';
 import './taxes.dart';
 import 'formalloans.dart';
+import './globalfile.dart';
 
 class InfoPage extends StatelessWidget {
   static const routeName = '/infoPage';
@@ -14,7 +15,7 @@ class InfoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double cwidth = MediaQuery.of(context).size.width;
     double cheight = MediaQuery.of(context).size.height;
-    String nameEntered = "Monik";
+    String nameEntered = GlobalFile.getName();
     final List<String> financialWays = [
       "Banking",
       "Stock market",
@@ -37,17 +38,11 @@ class InfoPage extends StatelessWidget {
           width: cwidth,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                "Welcome ",
-                style: GoogleFonts.montserrat(
-                  color: Color(0XFFffffff),
-                  fontSize: 28,
-                ),
-              ),
+          
               SizedBox(
-                height: cheight * (66 / 1045),
+                height: cheight * (75 / 1045),
               ),
               Container(
                 height: cheight * (540 / 1045),
@@ -64,7 +59,7 @@ class InfoPage extends StatelessWidget {
                     children: <Widget>[
                       Flexible(
                         child: Text(
-                          "Welcome $nameEntered to financegame here you will be taught how to manage your personal finance and investments. ",
+                          "Welcome $nameEntered to The Ode of Finance here you will be taught how to manage your personal finance and investments. ",
                           style: GoogleFonts.openSans(
                             textStyle: Theme.of(context).textTheme.headline4,
                             color: Color(0xFFF2F2F2),

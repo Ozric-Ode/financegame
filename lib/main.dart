@@ -1,4 +1,4 @@
-import 'package:financegame/informalLoan.dart';
+
 import 'package:flutter/material.dart';
 import 'BankAccountPage.dart';
 import 'LoanFormalPage.dart';
@@ -13,14 +13,7 @@ class MyApp extends StatelessWidget {
       // routes: {},
       debugShowCheckedModeBanner: false,
       title: "Finance Game",
-      //  home :LoanFormal(),
-      //change the name of home according to your file class name
-      // Example: if your class name is LandingPage, then write
-      //home: LandingPage(),
 
-      // home: HomeScreen(),
-      home: InformalLoan(),
-        
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'BankAccountPage.dart';
+import 'LoanFormalPage.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       routes: {},
       debugShowCheckedModeBanner: false,
       title: "Finance Game",
-       home :BankAccounts(),
+       home :LoanFormal(),
       //change the name of home according to your file class name
       // Example: if your class name is LandingPage, then write
       //home: LandingPage(),

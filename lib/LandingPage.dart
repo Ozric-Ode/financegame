@@ -38,7 +38,7 @@ class LandingPage extends State<MyCustomForm> {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 200.0, vertical: 30),
                 child: Text(
-                  "Finance Game",
+                  "The Ode of Finance",
                   style: GoogleFonts.openSans(
                     textStyle: Theme.of(context).textTheme.headline4,
                     color: Color(0xFFFffffff),
@@ -122,7 +122,7 @@ class LandingPage extends State<MyCustomForm> {
                             },
                           );
                         },
-                        child: Text("Submit"),
+                        child: Text("Launch Game"),
                       ),
                     ),
                   ],

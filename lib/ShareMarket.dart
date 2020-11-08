@@ -58,8 +58,12 @@ class _ShareMarketState extends State<ShareMarket> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Color(0xff191d38),
-      body: Column(
+      body: SingleChildScrollView(
+
+         scrollDirection: Axis.vertical,
+      child: Column(
         children: [
           Center(
             child: FlatButton(
@@ -813,6 +817,7 @@ class _ShareMarketState extends State<ShareMarket> {
           ),
         ],
       ),
+    ),
     );
   }
 }

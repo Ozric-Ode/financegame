@@ -16,7 +16,10 @@ class GoalsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     int totalNumberOfQues = 10, numberOfQues = 2;
     return Scaffold(
-      body: Container(
+      body: SingleChildScrollView(
+
+         scrollDirection: Axis.vertical,
+      child: Container(
         // padding: EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -100,7 +103,7 @@ class GoalsPage extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          height: 70,
+                          height: 50,
                           width: MediaQuery.of(context).size.width,
                           child: RaisedButton(
                             child: Text(
@@ -192,6 +195,7 @@ class GoalsPage extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 }
